@@ -1,0 +1,7 @@
+{
+	"name": "Custom Content Block",
+	"description": "A Salesforce Marketing Cloud Content Builder Custom Block",
+	"repository": "https://github.com/bkaplan-github/parameterized-content-block",
+	"logo": "https://github.com/bkaplan-github/parameterized-content-block/blob/master/dist/icon.png?raw=true",
+	"keywords": ["node", "express", "static", "content builder", "block", "blocksdk"]
+}

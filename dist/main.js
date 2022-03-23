@@ -19,9 +19,15 @@ function debounce (func, wait, immediate) {
 	};
 }
 
-function paintMap() {
+
+function paintBox() {
 	checkbox = document.getElementById('checkbox').value; 
-  sdk.setContent('<div>test</div>');
+  if (checkbox = true){
+    sdk.setContent('<div>test</div>');
+  }else{
+    sdk.setContent('');
+  }
+  
   sdk.setData({
     checkbox: checkbox
   });  
@@ -30,7 +36,7 @@ function paintMap() {
 
 sdk.getData(function (data) {
 	checkbox = data.checkbox || false;
-	paintMap();
+	paintBox();
 });
 
 

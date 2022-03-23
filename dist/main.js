@@ -21,7 +21,7 @@ function debounce (func, wait, immediate) {
 
 
 function paintBox() {
-	checkbox = document.getElementById('checkbox').value; 
+	checkbox = document.getElementById('checkbox').checked; 
   if (checkbox === true){
     sdk.setContent('<div>test</div>');
   }else{

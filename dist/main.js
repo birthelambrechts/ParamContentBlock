@@ -34,7 +34,7 @@ function paintBox() {
 }
 
 sdk.getData(function (data) {
-	checkbox = data.checkbox || false;
+	checkbox = data.checkbox;
 	paintBox();
 });
 

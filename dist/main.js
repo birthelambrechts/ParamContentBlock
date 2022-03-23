@@ -33,12 +33,14 @@ function paintBox() {
   });  
 }
 
-
 sdk.getData(function (data) {
 	checkbox = data.checkbox || false;
 	paintBox();
 });
 
+document.getElementById('workspace').addEventListener("input", function () {
+	debounce(paintBox, 500)();
+});
 
 // update the preview
 $("#preview").change(function() { // keyup()
